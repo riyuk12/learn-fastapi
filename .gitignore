@@ -1,0 +1,26 @@
+# Virtual environments (pattern with no leading slash matches at any depth,
+# so this also covers mangashelf/venv/)
+venv/
+.venv/
+env/
+
+# Python bytecode & build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Environment / secrets — NEVER commit real secrets
+.env
+*.env
+!.env.example
+
+# Claude Code local (machine-specific) settings
+.claude/settings.local.json
+
+# Editor & OS noise
+.idea/
+.vscode/
+.DS_Store
